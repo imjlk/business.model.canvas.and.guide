@@ -26,19 +26,20 @@ function Posts({
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <section className={styles['posts-block']} {...(id && { id })}>
-      <div className="wrap">
+      <div className='wrap'>
         {heading && (
           <Heading level={headingLevel} className={styles.heading}>
             {heading}
           </Heading>
         )}
         {intro && <p className={styles.intro}>{intro}</p>}
-        <div className="posts">
+        <div className='posts'>
           {posts.map((post) => (
             <div
               className={styles.single}
               key={post.id ?? ''}
-              id={`post-${post.id}`}>
+              id={`post-${post.id}`}
+            >
               <div>
                 <Heading level={postTitleLevel} className={styles.title}>
                   <Link href={`/posts/${post.slug}`}>

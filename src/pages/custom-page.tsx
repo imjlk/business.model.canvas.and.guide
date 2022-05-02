@@ -19,16 +19,17 @@ export default function Page() {
         <title>Custom Page - {generalSettings.title}</title>
       </Head>
 
-      <Hero title="Custom Page" />
+      <Hero title='Custom Page' />
 
-      <main className="content content-single">
-        <div className="wrap">
+      <main className='content content-single'>
+        <div className='wrap'>
           <p>
             You can still create pages just as you would in{' '}
             <a
-              href="https://nextjs.org/docs/basic-features/pages"
-              target="_blank"
-              rel="noreferrer">
+              href='https://nextjs.org/docs/basic-features/pages'
+              target='_blank'
+              rel='noreferrer'
+            >
               Next.js
             </a>
             . Take a look at <code>src/pages/custom-page.tsx</code> for an
