@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from 'scss/components/Footer.module.scss';
-
+import { decode } from 'html-entities';
 interface Props {
   copyrightHolder?: string;
 }
@@ -11,7 +11,7 @@ function Footer({ copyrightHolder = 'Company Name' }: Props): JSX.Element {
   return (
     <footer className={styles.main}>
       <div className={styles.wrap}>
-        <p>{`© ${year} ${copyrightHolder}. All rights reserved.`}</p>
+        <p>{`© ${year} ${decode(copyrightHolder)}. All rights reserved.`}</p>
       </div>
     </footer>
   );
