@@ -10,7 +10,7 @@ interface Props {
 }
 
 function Header({
-  title = 'Headless by WP Engine',
+  title = 'Business Model Canvas & Guide',
   description,
 }: Props): JSX.Element {
   const { menuItems } = client.useQuery();
@@ -29,7 +29,11 @@ function Header({
           </p>
           {description && <p className={styles.description}>{description}</p>}
         </div>
-        <div className={styles.menu}></div>
+        <div className={styles.menu}>
+          <Link href='/canvas'>
+            <a>Canvas</a>
+          </Link>
+        </div>
       </div>
     </header>
   );

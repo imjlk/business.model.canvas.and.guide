@@ -1,0 +1,55 @@
+@import 'scss/variables';
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 70vh;
+}
+.second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 30vh;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+  background-color: aqua;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: aquamarine;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: burlywood;
+}
+.div4 {
+  grid-area: 1 / 3 / 3 / 4;
+  background-color: cornflowerblue;
+}
+.div5 {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: darkkhaki;
+}
+.div6 {
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: honeydew;
+}
+.div7 {
+  grid-area: 1 / 5 / 3 / 6;
+  background-color: indigo;
+}
+.div8 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: maroon;
+}
+.div9 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: mistyrose;
+}
