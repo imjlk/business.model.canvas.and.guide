@@ -3,6 +3,7 @@ import BMCanvas from 'components/BMCanvas';
 import { getNextStaticProps, is404 } from '@faustjs/next';
 import { GetStaticPropsContext } from 'next';
 import { Header } from 'components';
+import Button from '@mui/material/Button';
 
 export default function Page() {
   const { useQuery } = client;
@@ -15,6 +16,8 @@ export default function Page() {
         description={generalSettings.description}
       />
       <BMCanvas />
+      <Button variant='contained'>Contained</Button>
+      <Button variant='outlined'>Outlined</Button>
     </>
   );
 }
