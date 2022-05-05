@@ -20,5 +20,9 @@ export default function Logout() {
       router.push('/');
     }
   }, [router, isLoggedOut]);
-  return <>Logging out...</>;
+  return (
+    <>
+      <p>Logging out...</p>
+    </>
+  );
 }

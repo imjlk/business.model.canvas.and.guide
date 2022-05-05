@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from 'scss/components/BMCanvas.module.scss';
 
-function BMCanvas() {
+function BMCanvas(): JSX.Element {
   return (
     <div className='f-container height-full f-dir-col'>
       <div className={styles.parent}>

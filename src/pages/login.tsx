@@ -1,7 +1,7 @@
 import { client } from 'client';
 import { useState } from 'react';
 
-export default function Login() {
+export default function Login(): JSX.Element {
   const { useLogin } = client.auth;
   const [usernameEmail, setUserNameEmail] = useState('');
   const [password, setPassword] = useState('');

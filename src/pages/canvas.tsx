@@ -5,7 +5,7 @@ import { GetStaticPropsContext } from 'next';
 import { Header } from 'components';
 import Button from '@mui/material/Button';
 
-export default function Page() {
+export default function Page(): JSX.Element {
   const { useQuery } = client;
   const { generalSettings } = useQuery();
   const canvases = useQuery().openCanvases()?.nodes;
