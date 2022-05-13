@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { MutableRefObject } from 'react';
 import styles from 'scss/components/BMCanvas.module.scss';
 
-function BMCanvas(): JSX.Element {
+interface Props {
+  canvasRef: MutableRefObject<HTMLDivElement>;
+}
+
+function BMCanvas({ canvasRef }): JSX.Element {
   return (
-    <div className='f-container height-full f-dir-col'>
+    <div ref={canvasRef} className='f-container height-full f-dir-col'>
       <div className={styles.parent}>
         <div className={styles.div1}>contents</div>
         <div className={styles.div2}>contents</div>
